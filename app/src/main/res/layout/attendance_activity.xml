@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_background">
+
+    <include
+        android:id="@+id/toolbar_actionbar"
+        layout="@layout/toolbar_custom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/student_info_lyt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar_actionbar"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_10dp">
+
+        <com.thinkpace.pacifyca.widget.RoboTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Student info"
+            android:textColor="@color/colorDivider"
+            android:textSize="12sp" />
+
+        <com.thinkpace.pacifyca.widget.RoboTextView
+            android:id="@+id/student_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Krishna Gadagool"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <com.thinkpace.pacifyca.widget.RoboTextView
+            android:id="@+id/course_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="MBA - jfafjj"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="10dp"
+            android:background="@color/light_gray" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/date_picker_lyt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/student_info_lyt"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/date_picker"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="@string/click_here_to_choose_date"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <!-- <com.thinkpace.pacifyca.widget.RoboTextView
+             android:id="@+id/today"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerVertical="true"
+             android:layout_marginRight="5dp"
+             android:layout_toLeftOf="@+id/yesterday"
+             android:layout_toStartOf="@+id/yesterday"
+             android:background="@drawable/brand_grey_border"
+             android:text="TODAY"
+             android:textSize="14sp" />
+
+         <com.thinkpace.pacifyca.widget.RoboTextView
+             android:id="@+id/yesterday"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentEnd="true"
+             android:layout_alignParentRight="true"
+             android:layout_centerInParent="true"
+             android:background="@drawable/brand_grey_border"
+             android:text="YESTERDAY"
+             android:textSize="14sp" />-->
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/submit_btn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/date_picker_lyt"
+        android:layout_margin="10dp"
+        android:background="@drawable/login_btn_border"
+        android:text="Check Attendance"
+        android:textColor="@color/white" />
+
+    <RelativeLayout
+        android:id="@+id/month_lyt"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/submit_btn"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/month_text"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:textColor="@color/orange"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/month_lyt"
+        android:background="@color/light_gray_transparant">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/pie_chart_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/no_attendance_lyt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/month_lyt"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:visibility="gone">
+
+        <com.thinkpace.pacifyca.widget.RoboTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/imageView"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:text="Attendance status is not available for this date"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            app:fontType="robotoLight" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/no_attendance_icon" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/progress_lyt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/month_lyt"
+        android:background="@color/dim_gray"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+
+    </RelativeLayout>
+</RelativeLayout>

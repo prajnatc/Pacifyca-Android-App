@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/splash_bg_content">
+
+    <include
+        android:id="@+id/notice_toolbar"
+        layout="@layout/toolbar_custom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/notice_toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/notice_detail_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimaryDark"
+                    android:padding="10dp">
+
+                    <com.thinkpace.pacifyca.widget.RoboTextView
+                        android:id="@+id/notice_details"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/expiry_date"
+                        android:layout_toStartOf="@+id/expiry_date"
+                        android:text="@string/notice_details"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_16_sp"
+                        app:fontType="robotoMedium" />
+
+                    <com.thinkpace.pacifyca.widget.RoboTextView
+                        android:id="@+id/expiry_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="21-04 1988"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_16_sp"
+                        app:fontType="robotoMedium" />
+
+                </RelativeLayout>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/other_info_lyt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/white"
+                    android:elevation="2dp"
+                    card_view:cardCornerRadius="3dp"
+                    card_view:cardElevation="2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <com.thinkpace.pacifyca.widget.RoboTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/assignee_name"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/text_16_sp"
+                            app:fontType="robotoMedium"
+                            android:visibility="gone"/>
+
+                        <com.thinkpace.pacifyca.widget.RoboTextView
+                            android:id="@+id/assignee_name_text_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            app:fontType="robotoMedium"
+                            android:visibility="gone"/>
+
+                        <com.thinkpace.pacifyca.widget.RoboTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/assigned_date"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/text_16_sp"
+                            app:fontType="robotoMedium"
+                            android:visibility="gone"/>
+
+                        <com.thinkpace.pacifyca.widget.RoboTextView
+                            android:id="@+id/assigned_date_text_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            app:fontType="robotoMedium"
+                            android:visibility="gone"/>
+                        <com.thinkpace.pacifyca.widget.RoboTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/notice_title"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/text_16_sp"
+                            app:fontType="robotoBold" />
+
+                        <com.thinkpace.pacifyca.widget.RoboTextView
+                            android:id="@+id/notice_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            app:fontType="robotoMedium" />
+
+                        <com.thinkpace.pacifyca.widget.RoboTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/description"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/text_16_sp"
+                            app:fontType="robotoBold" />
+
+                        <WebView
+                            android:id="@+id/notice_description"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                        <com.thinkpace.pacifyca.widget.RoboTextView
+                            android:id="@+id/tv_start_date"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Start Date - "
+                            android:textColor="@color/red"
+                            android:textSize="@dimen/text_16_sp"
+                            app:fontType="robotoBold"
+                            android:visibility="gone"/>
+
+                        <com.thinkpace.pacifyca.widget.RoboTextView
+                            android:id="@+id/tv_end_date"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dp"
+                            android:text="End Date - "
+                            android:textColor="@color/red"
+                            android:textSize="@dimen/text_16_sp"
+                            app:fontType="robotoBold"
+                            android:visibility="gone"/>
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+            <include layout="@layout/no_messages_layout" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

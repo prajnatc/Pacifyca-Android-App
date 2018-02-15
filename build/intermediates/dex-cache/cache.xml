@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/home/lenovo/AndroidStudioRealProjects/Pacifyca_Github/pacifyca-android-app/dot-progress-bar/build/intermediates/bundles/default/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9a6a61f00b22b706ac58b77653b0f8f458a33b79">
+        <dex dex="/home/lenovo/AndroidStudioRealProjects/Pacifyca_Github/pacifyca-android-app/app/build/intermediates/pre-dexed/demo/debug/classes_285518e76de0cfb9e84ae84bd84309b2fb93025b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/lenovo/AndroidStudioRealProjects/Pacifyca_Github/pacifyca-android-app/library/build/intermediates/bundles/default/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="30a45301ce5f0bcc16343e3411bfa4a0b5ea9d3e">
+        <dex dex="/home/lenovo/AndroidStudioRealProjects/Pacifyca_Github/pacifyca-android-app/app/build/intermediates/pre-dexed/demo/debug/classes_613f06adb337d67389c7746edd2076cc992bb25f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/lenovo/AndroidStudioRealProjects/Pacifyca_Github/pacifyca-android-app/Volly/build/intermediates/bundles/default/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="2e23310c1e9f1ed3ef785eeaf1bd817ee10c9d43">
+        <dex dex="/home/lenovo/AndroidStudioRealProjects/Pacifyca_Github/pacifyca-android-app/app/build/intermediates/pre-dexed/demo/debug/classes_dc836c2a5045f9168c408df6ab3793ba6fecd1f5.jar" />
+    </item>
+
+</items>

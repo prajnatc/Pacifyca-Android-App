@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="10dp"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/toolbar_actionbar"
+        layout="@layout/toolbar_default"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar_actionbar">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbar_actionbar"
+            android:orientation="vertical">
+
+
+            <com.thinkpace.pacifyca.widget.RoboTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Personal information"
+                android:textColor="@color/text_gray"
+                android:textSize="14sp"
+                app:fontType="robotoMedium" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/student_personal_info_lyt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/white"
+                android:elevation="2dp"
+                card_view:cardCornerRadius="3dp"
+                card_view:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_weight="0.5"
+                        android:orientation="vertical">
+
+                        <com.thinkpace.pacifyca.widget.RoboTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Admission Date"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="14sp"
+                            app:fontType="robotoMedium" />
+
+                        <com.thinkpace.pacifyca.widget.RoboTextView
+                            android:id="@+id/admission_date"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            app:fontType="robotoMedium" />
+
+                        <com.thinkpace.pacifyca.widget.RoboTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Student Reg-No"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="14sp"
+                            app:fontType="robotoMedium" />
+
+                        <com.thinkpace.pacifyca.widget.RoboTextView
+                            android:id="@+id/student_reg_no"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            app:fontType="robotoMedium" />
+
+                        <com.thinkpace.pacifyca.widget.RoboTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dp"
+                            android:text="DOB"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="14sp"
+                            app:fontType="robotoMedium" />
+
+                        <com.thinkpace.pacifyca.widget.RoboTextView
+                            android:id="@+id/dob"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            app:fontType="robotoMedium" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="0.5"
+                        android:background="@color/white"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            android:background="@color/white"
+                            android:gravity="center_horizontal">
+
+                            <ImageView
+                                android:id="@+id/profile_img"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_gravity="center_vertical"
+                                android:src="@drawable/profile_icon" />
+
+                            <ImageView
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_gravity="center_vertical"
+                                android:src="@drawable/bg_rounded_corner" />
+
+                        </RelativeLayout>
+
+
+                        <com.thinkpace.pacifyca.widget.RoboTextView
+                            android:id="@+id/student_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_horizontal"
+                            android:paddingLeft="10dp"
+                            android:text="Krishna"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            app:fontType="robotoMedium" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <com.thinkpace.pacifyca.widget.RoboTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Other information"
+                android:textColor="@color/text_gray"
+                android:textSize="14sp"
+                app:fontType="robotoMedium" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/other_info_lyt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/white"
+                android:elevation="2dp"
+                card_view:cardCornerRadius="3dp"
+                card_view:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.thinkpace.pacifyca.widget.RoboTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="School / Institution Name"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="14sp"
+                        app:fontType="robotoMedium" />
+
+                    <com.thinkpace.pacifyca.widget.RoboTextView
+                        android:id="@+id/school_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        app:fontType="robotoMedium" />
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right" />
+
+                    <com.thinkpace.pacifyca.widget.RoboTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Course Name"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="14sp"
+                        app:fontType="robotoMedium" />
+
+                    <com.thinkpace.pacifyca.widget.RoboTextView
+                        android:id="@+id/course_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        app:fontType="robotoMedium" />
+
+                    <com.thinkpace.pacifyca.widget.RoboTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Academic Year"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="14sp"
+                        app:fontType="robotoMedium" />
+
+                    <com.thinkpace.pacifyca.widget.RoboTextView
+                        android:id="@+id/academic_year"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        app:fontType="robotoMedium" />
+
+                    <com.thinkpace.pacifyca.widget.RoboTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="School/College Contact No"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="14sp"
+                        app:fontType="robotoMedium" />
+
+                    <com.thinkpace.pacifyca.widget.RoboTextView
+                        android:id="@+id/school_contact_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        app:fontType="robotoMedium" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/progress_lyt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar_actionbar"
+        android:background="@color/dim_gray"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

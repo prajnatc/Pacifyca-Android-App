@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/item_success_lyt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/current_student_lyt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_8_dp"
+            android:layout_marginRight="@dimen/margin_16_dp"
+            android:layout_marginTop="@dimen/margin_8_dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/student_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/margin_5dp"
+                    android:text="@string/current_student"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/text_size_14sp" />
+
+                <TextView
+                    android:id="@+id/selected_student_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/margin_5dp"
+                    android:text="---"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_16sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/student_refresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/change_student" />
+
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/title_separator"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/current_student_lyt"
+            android:layout_marginLeft="@dimen/margin_8_dp"
+            android:layout_marginRight="@dimen/margin_8_dp"
+            android:layout_marginTop="@dimen/margin_8_dp"
+            android:background="@color/colorPrimaryDark" />
+
+        <Button
+            android:id="@+id/change_student_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/login_btn_border"
+            android:focusable="false"
+            android:gravity="center_vertical"
+            android:maxLength="10"
+            android:paddingLeft="60dp"
+            android:paddingRight="60dp"
+            android:stateListAnimator="@null"
+            android:text="@string/ok"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/students_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/change_student_btn"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/title_separator"
+            android:layout_marginLeft="@dimen/margin_8_dp"
+            android:layout_marginRight="@dimen/margin_8_dp" />
+
+        <include layout="@layout/no_students_found" />
+    </RelativeLayout>
+
+
+    <ProgressBar
+        android:id="@+id/load_indicator"
+        style="@style/ProgressBarTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+
+</RelativeLayout>

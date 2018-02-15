@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_background"
+    tools:context="com.thinkpace.pacifyca.activity.APCNotice">
+
+    <include
+        android:id="@+id/toolbar_actionbar"
+        layout="@layout/toolbar_custom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar_actionbar">
+
+        <RelativeLayout
+            android:layout_margin="@dimen/margin_8_dp"
+            android:id="@+id/video_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--<android.support.v4.widget.SwipeRefreshLayout-->
+                <!--android:id="@+id/swipe_notice_refresh"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent">-->
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/video_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/spinner_view"
+                    android:layout_marginTop="@dimen/margin_8_dp" />
+            <!--</android.support.v4.widget.SwipeRefreshLayout>-->
+
+        </RelativeLayout>
+
+        <include layout="@layout/no_connection_layout" />
+
+        <include layout="@layout/no_messages_layout" />
+    </RelativeLayout>
+
+</RelativeLayout>

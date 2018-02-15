@@ -1,0 +1,120 @@
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+}
+
+buildscript {
+    repositories {
+        jcenter()
+        maven { url 'https://maven.fabric.io/public' }
+    }
+    dependencies {
+        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
+        classpath 'io.fabric.tools:gradle:1.+'
+    }
+}
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "25.0.0"
+
+    defaultConfig {
+        applicationId "com.thinkpace.pacifyca"
+        minSdkVersion 16
+        targetSdkVersion 22
+        versionCode 2
+        versionName "1.1"
+    }
+
+    signingConfigs {
+        release {
+            //Key store file path and credentials
+          storeFile file('credentials/pacifyca_key_store.jks') // storeFile file("E:\\Android Projects\\Pacifyca\\credentials\\key_store.jks")
+            storePassword "p@(!f!(@+36LO2d"
+            keyAlias "PacifycaKeys"
+            keyPassword "p@(!f!(@+36LO2d"
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            buildConfigField "String", "API_KEY", "\"95yV0U155lrb77e9rgXl8u2pNuf27989\"" //Update API_KEY for production 95yV0U155lrb77e9rgXl8u2pNuf27989 / WWmaoJGAAa54p984tAp2KekoXZ5FdthI
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+            lintOptions {
+                disable 'MissingTranslation'
+            }
+        }
+        debug {
+            minifyEnabled false
+            buildConfigField "String", "API_KEY", "\"95yV0U155lrb77e9rgXl8u2pNuf27989\"" //Update API_KEY for production
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    //Create product flavours for different clients with same package and suffix with client name. Update version code and name for each release.
+    productFlavors {
+        pacifyca {
+            applicationId "com.thinkpace.pacifyca"
+            versionCode 2
+            versionName "1.1"
+        }
+        rotary {
+            applicationId "com.thinkpace.pacifyca.rotary"
+            versionCode 4
+            versionName "1.3"
+        }
+        aac {
+            applicationId "com.thinkpace.pacifyca.aac"
+            versionCode 5
+            versionName "1.3"
+        }
+        joyland {
+            applicationId "com.thinkpace.pacifyca.joyland"
+            versionCode 4
+            versionName "1.3"
+        }
+        fmmc {
+            applicationId "com.thinkpace.pacifyca.fmmc"
+            versionCode 1
+            versionName "1.0"
+        }
+        demo {
+            applicationId "com.thinkpace.pacifyca.demo"
+            versionCode 1
+            versionName "1.0"
+        }
+    }
+}
+apply plugin: 'android-apt'
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    /*compile 'com.android.volley:volley:1.0.0'*/
+    compile project(':Volly')
+    compile('com.crashlytics.sdk.android:crashlytics:2.6.5@aar') {
+        transitive = true;
+    }
+    compile project(':dot-progress-bar')
+    compile project(':library')
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.jakewharton:butterknife:8.4.0'
+    compile 'com.squareup.okhttp:okhttp-urlconnection:2.5.0'
+    compile 'com.google.code.gson:gson:2.2.4'
+    compile 'org.jsoup:jsoup:1.8.1'
+    compile 'com.android.support:design:23.4.0'
+    compile 'com.android.support:recyclerview-v7:23.4.0'
+    compile 'com.android.support:cardview-v7:23.4.0'
+    compile 'com.android.support:support-v4:23.4.0'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.github.PhilJay:MPAndroidChart:v3.0.1'
+    compile 'com.google.firebase:firebase-messaging:9.4.0'
+    compile "me.leolin:ShortcutBadger:1.1.21@aar"
+    testCompile 'junit:junit:4.12'
+    apt 'com.jakewharton:butterknife-compiler:8.4.0'
+}
+
+apply plugin: 'com.google.gms.google-services'
+

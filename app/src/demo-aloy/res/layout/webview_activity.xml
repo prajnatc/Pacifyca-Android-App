@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_root_web_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_background"
+    tools:context=".activity.APCWebViewActivity">
+
+    <include
+        android:id="@+id/toolbar_actionbar"
+        layout="@layout/toolbar_custom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/boat_img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/toolbar_actionbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/demo_logo" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/student_personal_info_lyt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/boat_img"
+        android:layout_marginBottom="24dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:elevation="2dp"
+        tools:cardCornerRadius="3dp"
+        tools:cardElevation="2dp">
+
+        <WebView
+            android:id="@+id/webview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/toolbar_actionbar" />
+    </android.support.v7.widget.CardView>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <LinearLayout
+        android:id="@+id/no_connection_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_actionbar"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:src="@drawable/no_internet_connection" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/no_internet_connection"
+            android:textColor="@color/black"
+            android:textSize="@dimen/abc_text_size_medium_material" />
+
+    </LinearLayout>
+
+</RelativeLayout>

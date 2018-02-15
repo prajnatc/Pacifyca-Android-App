@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#008081</color>
+    <color name="status_bar_green">#06897b</color>
+
+    <color name="colorAccent">#D3D3D3</color>
+    <color name="pacifyca_blue">#25aae1</color>
+    <color name="pacifyca_blue_tint">#25aae1</color>
+
+    <color name="colorPrimary_light">#C8E6C9</color>
+    <color name="colorPrimary_text">#212121</color>
+    <color name="colorSecondary_text">#727272</color>
+    <color name="colorIcons">#FFFFFF</color>
+    <color name="colorDivider">#B6B6B6</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="black_transperant">#9D000000</color>
+    <color name="light_gray_transparant">#80D3D3D3</color>
+
+    <color name="dim_gray">#EEEEEE</color>
+    <color name="gray_cccc">#cccccc</color>
+    <color name="light_gray">#D3D3D3</color>
+    <color name="dark_gray">#1a1a1a</color>
+    <color name="actionbar_black">#29303f</color>
+    <color name="text_gray">#999999</color>
+    <color name="whatsappFAB">#06897b</color>
+    <color name="moreFAB2">#ECECEC</color>
+    <color name="tweetFAB">#1CB7EB</color>
+    <color name="fbFAB2">#4E71A8</color>
+    <color name="alpha_black">#BF000000</color>
+    <color name="red">#E71919</color>
+    <color name="green">#06897b</color>
+    <color name="yellow">#ffcc00</color>
+    <color name="rating_bar_golden">#ffcc00</color>
+
+    <color name="default_screen_bg">#f9f9f9</color>
+    <color name="rounded_container_bg">#222222</color>
+    <color name="rounded_container_border">#3b3f44</color>
+    <color name="light_gray_header_color">#646663</color>
+    <color name="orange">#F44A16</color>
+    <color name="gray">#999999</color>
+    <color name="transparent_black">#aa000000</color>
+    <color name="category_gray">#9a9a9a</color>
+    <color name="custom_header_text">#06897b</color>
+    <color name="custom_selected">#009689</color>
+    <color name="custom_background">#F0F8DB</color>
+    <color name="custom_background_today">#FF9105</color>
+    <color name="custom_background_disabled">#F0F8DB</color>
+    <color name="custom_text_selected">#FFFFFFFF</color>
+    <color name="custom_text_inactive">#7f778088</color>
+    <color name="transparent">#00000000</color>
+    <color name="present_blue">#61A9DC</color>
+    <color name="present_pm_yellow">#FFF200</color>
+<color name="tab_background_selected">#C1DCA7</color>
+
+    <!--//Prajna-->
+    <color name="holiday_red">#c74c4e</color>
+    <color name="event_yellow">#f5974d</color>
+    <color name="reminder_blue">#3f5169</color>
+    <color name="about_bg_color">#f64747</color>
+    <color name="news_bg_color">#663399</color>
+    <color name="sms_bg_color">#913d88</color>
+    <color name="notice_bg_color">#1e8bc3</color>
+    <color name="assignment_bg_color">#24adb1</color>
+    <color name="calendar_bg_color">#f2784b</color>
+    <color name="video_bg_color">#336e7b</color>
+    <color name="exam_bg_color">#34495e</color>
+
+</resources>

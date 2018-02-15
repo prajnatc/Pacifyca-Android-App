@@ -1,0 +1,101 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlNormal">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="ToolBarStyle" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+        <item name="colorControlNormal">@color/colorPrimaryDark</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="SplashTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="SpinnerTheme" parent="Base.Widget.AppCompat.Spinner.Underlined">
+        <item name="android:paddingBottom">5sp</item>
+        <item name="android:textSize">@dimen/text_20_sp</item>
+        <item name="android:textColor">@color/status_bar_green</item>
+
+    </style>
+
+    <style name="TxtInputLytStyle" parent="Widget.Design.TextInputLayout">
+        <item name="android:textColorHint">@color/status_bar_green</item>
+        <item name="colorAccent">@color/status_bar_green</item>
+        <item name="colorControlNormal">@color/status_bar_green</item>
+        <item name="colorControlActivated">@color/status_bar_green</item>
+    </style>
+
+    <style name="DateDialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="ProgressBarTheme" parent="Base.Widget.AppCompat.ProgressBar">
+        <item name="android:indeterminate">true</item>
+        <item name="android:indeterminateTint">@color/colorPrimaryDark</item>
+        <item name="android:indeterminateTintMode">src_atop</item>
+    </style>
+
+    <!--Prajna-->
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+
+    </style>
+
+    <style name="HomeButton">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:paddingTop">10sp</item>
+        <item name="android:paddingBottom">10sp</item>
+        <item name="android:drawablePadding">10sp</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:layout_marginTop">0dp</item>
+    </style>
+
+    <style name="DrawerMenu">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textColor">@color/light_gray_header_color</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="ToolbarStyle" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <!-- Customize color of navigation drawer icon and back arrow -->
+        <item name="colorControlNormal">@color/white</item>
+    </style>
+
+    <style name="RoundedText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/rounded_textview</item>
+        <item name="android:text">0</item>
+        <item name="android:textColor">#FFF</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_gravity">right</item>
+        <item name="android:gravity">center</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <!--<style name="behindMenuItemLabel">-->
+        <!--<item name="android:layout_width">wrap_content</item>-->
+        <!--<item name="android:layout_height">wrap_content</item>-->
+        <!--<item name="android:layout_marginLeft">20dp</item>-->
+        <!--<item name="android:layout_marginBottom">4dp</item>-->
+        <!--<item name="android:drawableLeft">@drawable/your_icon</item>-->
+        <!--<item name="android:textColor">#d2d2d2</item>-->
+    <!--</style>-->
+
+    <dimen name="text_size_medium">13dp</dimen>
+</resources>

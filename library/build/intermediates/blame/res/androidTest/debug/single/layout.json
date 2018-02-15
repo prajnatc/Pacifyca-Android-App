@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/lenovo/AndroidStudioRealProjects/Pacifyca_Github/pacifyca-android-app/library/build/intermediates/res/merged/androidTest/debug/layout/month.xml",
+        "source": "/home/lenovo/AndroidStudioRealProjects/Pacifyca_Github/pacifyca-android-app/library/build/intermediates/bundles/debug/res/layout/month.xml"
+    },
+    {
+        "merged": "/home/lenovo/AndroidStudioRealProjects/Pacifyca_Github/pacifyca-android-app/library/build/intermediates/res/merged/androidTest/debug/layout/week.xml",
+        "source": "/home/lenovo/AndroidStudioRealProjects/Pacifyca_Github/pacifyca-android-app/library/build/intermediates/bundles/debug/res/layout/week.xml"
+    }
+]

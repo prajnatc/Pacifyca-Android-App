@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/no_messages_lyt"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/toolbar_actionbar"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/messages_icon" />
+
+    <com.thinkpace.pacifyca.widget.RoboTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/no_messages_to_display"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/abc_text_size_medium_material"
+        card_view:fontType="robotoRegular" />
+
+</LinearLayout>

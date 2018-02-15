@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_background"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar_actionbar"
+        layout="@layout/toolbar_custom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.squareup.timessquare.CalendarPickerView
+        android:id="@+id/calendar_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF"
+        android:clipToPadding="false"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:scrollbarStyle="outsideOverlay" />
+
+    <LinearLayout
+        android:paddingTop="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:background="@color/holiday_red"
+            android:layout_marginLeft="52dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="@string/holiday"
+            android:layout_marginLeft="5dp"/>
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:background="@color/event_yellow" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="@string/event"
+            android:layout_marginLeft="5dp"/>
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:background="@color/reminder_blue" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="@string/reminder"
+            android:layout_marginLeft="5dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/done_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Done"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="12dp"
+        android:paddingTop="12dp"
+        android:weightSum="2">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/holiday_list"
+            android:layout_width="match_parent"
+            android:layout_height="180dp" />
+
+    </LinearLayout>
+</LinearLayout>

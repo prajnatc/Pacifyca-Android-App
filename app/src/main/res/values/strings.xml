@@ -1,0 +1,130 @@
+<resources>
+    <string name="app_name">Pacifyca</string>
+    <string name="drawer_open">Opens</string>
+    <string name="drawer_close">Close</string>
+    <string name="title_activity_apclogin">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="mobile_number">10-digit mobile number</string>
+    <string name="welcome">Welcome!</string>
+    <string name="assignments">Assignments</string>
+    <string name="messages">Messages</string>
+    <string name="attendance">Attendance</string>
+    <string name="announcement">Announcement</string>
+    <string name="about">About LCS</string>
+    <string name="logout">Logout</string>
+    <string name="videos">Videos</string>
+    <string name="action_settings">Settings</string>     <string name="access_location_alert_msg" translatable="false">Access Location permission is
+        disabled. Enable it from \"Settings\" -> \"Permissions\" to continue.
+    </string>
+
+    <string name="cancel">Cancel</string>
+    <string name="hint_mobile">Mobile Number</string>
+    <string name="msg_sit_back">Sit back &amp; Relax! while we verify your mobile number</string>
+    <string name="msg_manual_otp">(Enter the OTP below in case if we fail to detect the SMS automatically)</string>
+    <string name="lbl_enter_otp">Enter OTP</string>
+    <string name="lbl_submit">SUBMIT</string>
+    <string name="invalid_number_msg">Enter a valid mobile number</string>
+    <string name="no_network_msg">No internet connection, Please try again later.</string>
+    <string name="user_type">User Type</string>
+    <string name="current_student">Current Student</string>
+    <string name="other_students">other students</string>
+    <string name="ok">OK</string>
+    <string name="select_student">Select student</string>
+    <string name="no_messages_to_display">No items to display</string>
+    <string-array name="user_type">
+        <item>Student</item>
+        <item>Parent</item>
+    </string-array>
+
+    <string name="no_internet_connection">No internet connection, Please try again later.</string>
+
+
+    <string name="Done">Done</string>
+    <string name="Customized">Customized</string>
+    <string name="Decorator">Decorator</string>
+    <string name="Hebrew">Hebrew</string>
+    <string name="Arabic">Arabic</string>
+    <string name="CustomView">Custom View</string>
+    <string name="Dialog">Dialog</string>
+    <string name="DisplayOnly">DisplayOnly</string>
+    <string name="Range">Range</string>
+    <string name="Multi">Multi</string>
+    <string name="Single">Single</string>
+    <string name="added_to_favourite">Added to favourites</string>
+    <string name="removed_from_favourites">Removed from favourites</string>
+    <string name="click_here_for_more_details">Click here for more details</string>
+    <string name="click_here_to_choose_date">Click here to choose date</string>
+    <string name="no_students_to_display">No student data available</string>
+    <string name="personal_information">Personal information</string>
+    <string name="message_details">Message Details</string>
+    <string name="school_institution_name">School / Institution Name</string>
+    <string name="student_name">Student Name</string>
+    <string name="course_name">Course Name</string>
+    <string name="institution_name">Institution Name</string>
+    <string name="academic_year">Academic Year</string>
+    <string name="school_college_contact_no">School/College Contact No</string>
+    <string name="message_content">Message Content</string>
+    <string name="student_information">Student information</string>
+    <string name="all_subjects">All Subjects</string>
+    <string name="description">Description</string>
+    <string name="assignee_name">Assignee Name</string>
+    <string name="assigned_date">Assigned Date</string>
+    <string name="assignment_details">Assignment Details</string>
+    <string name="video_title">Video Title</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="time_table">Time Table</string>
+    <string name="subject_name">Subject Name</string>
+
+    <!--Prajna-->
+    <string name="holiday">Holiday</string>
+    <string name="event">Event</string>
+    <string name="reminder">Reminder</string>
+    <string name="notice">Circular and Notices</string>
+    <string name="news">News and Events</string>
+
+    <string name="notice_details">Details</string>
+    <string name="notice_title">Title</string>
+    <string name="sms">SMS</string>
+    <string name="calendar">School calendar</string>
+    <string name="exam_schedule">Exam Schedule</string>
+    <string name="home">Home</string>
+    <string name="aboutStudent">About Student</string>
+    <string name="contact">Contact us</string>
+    <string name="web_view_url">http://www.pacifyca.com/aboutus_lourdes.html</string>
+    <string name="contact_us_info">
+        <![CDATA[<h2><strong><font color="#0c8aa5">Lourdes Central School</font></strong></h2>
+<p><strong>Address :</strong> Lourdes Central School</p>
+<p>Bejai Church Campus</p>
+<p>Bejai Post</p>
+<p>Mangalore &ndash; 575 004</p>
+<p>Karnataka, India</p>
+<p><strong>Phone No : </strong>0824-2223366</p>
+<p>0824-2214966</p>
+<p>0824-2213865</p>
+<p>0824-4273082</p>
+<p><strong>Fax &ndash; No :</strong> 0824-4273081</p>
+<p><strong>Email :</strong> principal@Lourdescentralschool.com</p>
+<p><strong>Research Center : </strong>lcsresearchcenter@gmail.com</p>
+<p><strong>ISA :</strong> principalisa@lourdescentralschool.com</p>
+<p><strong>Manager :</strong> manger@lourdescentralschool.com</p>
+<p><strong>Website :</strong> www.lourdescentralschool.com</p>]]>
+    </string>
+    <string name="sdate">Start Date</string>
+    <string name="edate">End date</string>
+
+
+</resources>

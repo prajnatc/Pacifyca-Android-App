@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_chart_lyt"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_margin="10dp"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:id="@+id/chart_details_lyt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/pie_chart_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/attendance_info_lyt"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_10dp">
+
+                <com.thinkpace.pacifyca.widget.RoboTextView
+                    android:id="@+id/subject_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="@dimen/margin_5dp"
+                    android:text="Attendance details"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_16_sp"
+                    android:visibility="gone" />
+
+                <com.thinkpace.pacifyca.widget.RoboTextView
+                    android:id="@+id/title_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="@dimen/margin_5dp"
+                    android:text="Attendance details"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_16_sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="3dp">
+
+                    <RelativeLayout
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/present_blue"
+                        android:gravity="center_vertical"></RelativeLayout>
+
+                    <com.thinkpace.pacifyca.widget.RoboTextView
+                        android:id="@+id/present_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/margin_5dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/present_pm_lyt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="3dp">
+
+                    <RelativeLayout
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/present_pm_yellow"
+                        android:gravity="center_vertical" />
+
+                    <com.thinkpace.pacifyca.widget.RoboTextView
+                        android:id="@+id/present_PM_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="3dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="3dp">
+
+                    <RelativeLayout
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/gray"
+                        android:gravity="center_vertical" />
+
+                    <com.thinkpace.pacifyca.widget.RoboTextView
+                        android:id="@+id/absent_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="3dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/absent_pm_lyt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="3dp">
+
+                    <RelativeLayout
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/gray"
+                        android:gravity="center_vertical" />
+
+                    <com.thinkpace.pacifyca.widget.RoboTextView
+                        android:id="@+id/absent_pm_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="3dp" />
+                </LinearLayout>
+
+                <com.thinkpace.pacifyca.widget.RoboTextView
+                    android:id="@+id/total_text_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp" />
+            </LinearLayout>
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/pie_chart"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@id/attendance_info_lyt" />
+        </RelativeLayout>
+
+        <RelativeLayout
+
+            android:id="@+id/subject_type_lyt"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/padding_10dp"
+            android:layout_marginTop="@dimen/margin_20_dp"
+            android:background="@drawable/attendance_round_corner">
+
+            <com.thinkpace.pacifyca.widget.RoboTextView
+                android:id="@+id/subject_percent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <com.thinkpace.pacifyca.widget.RoboTextView
+        android:id="@+id/more_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/padding_10dp"
+        android:background="@drawable/brand_grey_border"
+        android:gravity="bottom"
+        android:padding="@dimen/margin_5dp"
+        android:text="@string/click_here_for_more_details"
+        android:textAlignment="center"
+        android:textSize="14sp" />
+
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_bg_content_o">
+
+    <ImageView
+        android:id="@+id/pacifyca_logo"
+        android:layout_width="170dp"
+        android:layout_height="65dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/pacfyca_splash_logo" />
+
+    <ImageView
+        android:id="@+id/kite_logo"
+        android:layout_width="230dp"
+        android:layout_height="180dp"
+        android:layout_below="@id/pacifyca_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/new_boat" />
+
+    <LinearLayout
+        android:id="@+id/powered_txt_lyt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kite_logo"
+        android:layout_marginTop="25dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="horizontal">
+
+        <com.thinkpace.pacifyca.widget.RoboTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Crafted with"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_14sp"
+            app:fontType="robotoLight" />
+
+        <ImageView
+            android:layout_width="@dimen/margin_24_dp"
+            android:layout_height="@dimen/margin_24_dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/favourite_icon" />
+
+        <com.thinkpace.pacifyca.widget.RoboTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="by ThinkPace"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_14sp"
+            app:fontType="robotoLight" />
+
+    </LinearLayout>
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/powered_txt_lyt"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/colorPrimaryDark"
+        android:indeterminateTintMode="src_atop" />
+
+</RelativeLayout>

@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/student_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/profile_img_drawer"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/profile_icon" />
+
+            <ImageView
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/bg_rounded_corner" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <com.thinkpace.pacifyca.widget.RoboTextView
+                android:id="@+id/user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:textColor="@color/colorSecondary_text"
+                android:textSize="16sp"
+                app:fontType="robotoBold" />
+
+            <com.thinkpace.pacifyca.widget.RoboTextView
+                android:id="@+id/student_admission_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/user_name"
+                android:layout_marginRight="15dp"
+                android:textColor="@color/colorSecondary_text"
+                android:textSize="12sp"
+                app:fontType="robotoBold" />
+
+            <com.thinkpace.pacifyca.widget.RoboTextView
+                android:id="@+id/student_class"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/student_admission_no"
+                android:layout_marginRight="15dp"
+                android:textColor="@color/colorSecondary_text"
+                android:textSize="12sp"
+                app:fontType="robotoBold" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/toolbar_actionbar"
+        layout="@layout/toolbar_default"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/gray_cccc" />
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar_actionbar">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/about_lyt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/about_layout_border">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:src="@drawable/ic_menu_about" />
+
+        <com.thinkpace.pacifyca.widget.RoboTextView
+            android:id="@+id/tv_about"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="@style/DrawerMenu"
+            android:text="@string/about"
+            app:fontType="robotoBold"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:drawableRight="@drawable/arrow"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/student_lyt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/student_layout_border">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:src="@drawable/ic_menu_student" />
+
+        <com.thinkpace.pacifyca.widget.RoboTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="@style/DrawerMenu"
+            android:text="@string/aboutStudent"
+            app:fontType="robotoBold"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:drawableRight="@drawable/arrow"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/news_lyt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/news_layout_border">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:src="@drawable/ic_menu_news" />
+
+        <com.thinkpace.pacifyca.widget.RoboTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="@style/DrawerMenu"
+            android:text="@string/news"
+            app:fontType="robotoBold"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:drawableRight="@drawable/arrow"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/message_lyt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        android:background="@drawable/sms_layout_border">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:src="@drawable/ic_menu_sms" />
+
+        <com.thinkpace.pacifyca.widget.RoboTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="@style/DrawerMenu"
+            android:text="@string/sms"
+            app:fontType="robotoBold"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:drawableRight="@drawable/arrow"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/notice_lyt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/notice_layout_border">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:src="@drawable/ic_menu_notice" />
+
+        <com.thinkpace.pacifyca.widget.RoboTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="@style/DrawerMenu"
+            android:text="@string/notice"
+            app:fontType="robotoBold"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:drawableRight="@drawable/arrow"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/assignment_lyt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/assignment_layout_border">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:src="@drawable/ic_menu_assignment" />
+
+        <com.thinkpace.pacifyca.widget.RoboTextView
+            android:id="@+id/tv_assignment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="@style/DrawerMenu"
+            android:text="@string/assignments"
+            app:fontType="robotoBold"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:drawableRight="@drawable/arrow"/>
+    </LinearLayout>
+
+    <LinearLayout
+                android:id="@+id/exam_lyt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/exam_layout_border">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:src="@drawable/ic_menu_exam" />
+
+                <com.thinkpace.pacifyca.widget.RoboTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAppearance="@style/DrawerMenu"
+                    android:text="@string/exam_schedule"
+                    app:fontType="robotoBold"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:drawableRight="@drawable/arrow"/>
+            </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/institute_lyt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/calendar_layout_border">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:src="@drawable/ic_menu_calendar" />
+
+        <com.thinkpace.pacifyca.widget.RoboTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="@style/DrawerMenu"
+            android:text="@string/calendar"
+            app:fontType="robotoBold"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:drawableRight="@drawable/arrow"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/attendance_lyt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:background="@drawable/attendance_layout_border">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:src="@drawable/ic_menu_attendance" />
+
+        <com.thinkpace.pacifyca.widget.RoboTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="@style/DrawerMenu"
+            android:text="@string/attendance"
+            app:fontType="robotoBold"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:drawableRight="@drawable/arrow"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/time_table_lyt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:background="@drawable/timetable_layout_border">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:src="@drawable/ic_menu_timetable" />
+
+        <com.thinkpace.pacifyca.widget.RoboTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="@style/DrawerMenu"
+            android:text="@string/time_table"
+            app:fontType="robotoBold"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:drawableRight="@drawable/arrow"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/video_lyt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        android:background="@drawable/video_layout_border">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:src="@drawable/ic_menu_video" />
+
+        <com.thinkpace.pacifyca.widget.RoboTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="@style/DrawerMenu"
+            android:text="@string/videos"
+            app:fontType="robotoBold"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:drawableRight="@drawable/arrow"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/contact_lyt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        android:background="@drawable/contact_layout_border">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:src="@drawable/ic_menu_contact" />
+
+        <com.thinkpace.pacifyca.widget.RoboTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="@style/DrawerMenu"
+            android:text="@string/contact"
+            app:fontType="robotoBold"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:drawableRight="@drawable/arrow"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/logout_lyt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/logout_layout_border">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:src="@drawable/ic_menu_logout" />
+
+        <com.thinkpace.pacifyca.widget.RoboTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="@style/DrawerMenu"
+            android:text="@string/logout"
+            app:fontType="robotoBold"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"/>
+    </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
